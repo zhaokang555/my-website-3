@@ -1,10 +1,14 @@
 VueRouter = require 'vue-router'
 VueResource = require 'vue-resource'
+# VueAsyncComputed = require 'vue-async-computed'
 ProjectComp = require './component/project-comp'
 RsumeComp = require './component/resume-comp'
-OthersComp = require './component/other-comp'
+OthersComp = require './component/others-comp'
+AboutMeComp = require './component/about-me-comp'
 
 Vue.use VueResource
+# Vue.use VueAsyncComputed
+
 
 # 创建一个路由器实例
 router = new VueRouter
@@ -24,6 +28,8 @@ router.map
     component: RsumeComp
   '/others':
     component: OthersComp
+  # '/about-me':
+  #   component: AboutMeComp
 
 App = Vue.extend
   el: ->
@@ -31,7 +37,7 @@ App = Vue.extend
   data: ->
     title: 'Zhao Kang\'s'
   ready: ->
-    console.log 'v6'
+    console.log 'v2'
 
     # 默认跳转到project
     router.go
