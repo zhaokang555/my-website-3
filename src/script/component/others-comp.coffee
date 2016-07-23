@@ -4,7 +4,7 @@ Vue.use VueAsyncComputed
 OthersComp = Vue.extend 
   template: '
     <div>
-      <div v-if="others" class="ui animated big link list">
+      <div v-if="others" class="ui animated large link list">
         <a v-for="row in others.contentArr" href="{{row.url}}" class="item" target="_blank">
           <i class="{{row.icon}}"></i>{{row.title}}
         </a>
