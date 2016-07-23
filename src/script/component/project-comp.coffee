@@ -11,7 +11,7 @@ ProjectComp = Vue.extend
     project: ->
       p = new Promise (resolve, reject) ->
         Vue.http.get('http://115.159.67.117:3000/project').then (res) ->
-          console.log res
+          # console.log res
           resolve res.data # resolve res.json()
       # p.then (data) ->
       #   data

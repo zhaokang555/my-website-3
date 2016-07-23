@@ -22,6 +22,8 @@ router = new VueRouter
 
 # 定义路由规则
 router.map
+  # '/':
+  #   component: ProjectComp
   '/project': 
     component: ProjectComp
   '/resume': 
@@ -40,8 +42,11 @@ App = Vue.extend
     console.log 'v2'
 
     # 默认跳转到project
-    router.go
-      path: '/project'
+    if @$route.path is '/'
+      router.go
+        path: '/project'
+      console.log "Jump from '/' to '/project'"
+
 
 # 路由器会创建一个 App 实例，并且挂载到选择符 #app 匹配的元素上。
 router.start(App, '#app')
