@@ -10,8 +10,10 @@
 <body>
   <!-- app begin -->
   <div id="app">
-    <h1 class="title">{{title}}</h1>
-    <div class="ui secondary pointing menu orange">
+    <h1 class="title">
+      <a href="./index.html">{{title}}</a>
+    </h1> 
+    <div class="ui secondary pointing menu teal">
       <a class="item" v-link="{ path: '/project' }">Project</a>
       <a class="item" v-link="{ path: '/resume' }">Resume</a>
       <a class="item" v-link="{ path: '/others' }">Others</a>

@@ -8,7 +8,7 @@ CardComp = Vue.extend
             <div class="header">{{row.title}}</div>
             <div class="description">{{row.memo}}</div>
           </div>
-          <a href="{{row.url}}" target="_blank" class="ui bottom attached button orange">
+          <a href="{{row.url}}" target="_blank" class="ui bottom attached button teal">
             <i class="share icon"></i>
             查看
           </a>

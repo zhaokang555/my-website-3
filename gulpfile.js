@@ -34,8 +34,10 @@ gulp.task('coffee', function() {
 gulp.task('stylus', function() {
   gulp.src('./src/style/*.styl')
       .pipe(stylus())
-      .pipe(gulp.dest('./public/'));
+      .pipe(gulp.dest('./public/'))
+      .pipe(notify({ message: 'stylus task complete' }))
 });
+
 
 gulp.task('browserify', function() {
   browserify({
