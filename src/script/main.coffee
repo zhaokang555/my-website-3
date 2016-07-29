@@ -4,7 +4,7 @@ VueResource = require 'vue-resource'
 ProjectComp = require './component/project-comp'
 RsumeComp = require './component/resume-comp'
 OthersComp = require './component/others-comp'
-AboutMeComp = require './component/about-me-comp'
+# AboutMeComp = require './component/about-me-comp'
 
 Vue.use VueResource
 # Vue.use VueAsyncComputed
