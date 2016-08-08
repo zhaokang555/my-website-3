@@ -13,10 +13,8 @@ Vue.use VueResource
 # 创建一个路由器实例
 router = new VueRouter
   # 配置：
-
   # default: true
   hashbang: false 
-
   # default: "v-link-active"
   linkActiveClass: 'active' 
 
@@ -39,7 +37,7 @@ App = Vue.extend
   data: ->
     title: 'Zhao Kang\'s'
   ready: ->
-    console.log 'v2'
+    console.log 'v3'
 
     # 默认跳转到project
     if @$route.path is '/'

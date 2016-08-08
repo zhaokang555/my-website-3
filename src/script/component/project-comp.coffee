@@ -13,11 +13,11 @@ ProjectComp = Vue.extend
         Vue.http.get('http://115.159.67.117:3000/project').then (res) ->
           # console.log res
           resolve res.data # resolve res.json()
-      # p.then (data) ->
-      #   data
-      # p
+      p.then (data) ->
+        data
+      p
 
-      # 为什么这样不行?
+      # =======不可以直接这样写======
       # Vue.http.get('http://115.159.67.117:3000/project').then (res) ->
       #   console.log res
       #   resolve res.data
